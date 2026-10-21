@@ -20,7 +20,7 @@ export default function Home() {
           <section className="h-[calc(100vh-96px)] p-4 md:p-6">
             <div className="h-full overflow-hidden rounded-[24px] border border-black/10 bg-white shadow-sm">
               <iframe
-                src={`${process.env.NEXT_PUBLIC_API_URL}/docs`}
+                src={`${process.env.NEXT_PUBLIC_API_URL || "https://agentshield-qa91.onrender.com"}/docs`}
                 title="AgentShield Security API"
                 className="h-full w-full border-0"
               />
